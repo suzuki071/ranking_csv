@@ -1,0 +1,3 @@
+function OnButtonClick() {
+  alert('クリックされました');
+}

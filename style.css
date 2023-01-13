@@ -17,15 +17,15 @@ body {
 
 /* main */
 .main {
- background-color: aquamarine;
+ /* background-color: aquamarine; */
  width: 800px;
  margin: 0 auto;
 }
 
 .text_area {
-  background-color: red;
+  /* background-color: red; */
   width: 400px;
-  height: 200px;
+  height: 50px;
   margin: 40px auto;
   text-align: center;
   vertical-align: middle;
@@ -39,9 +39,15 @@ body {
 }
 
 .result {
-
+  /* background-color: white; */
+  width: 400px;
+  height: 200px;
+  margin: 40px auto;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid;
 }
 
-.value {
-
+.val {
+  padding-top: 90px;
 }
