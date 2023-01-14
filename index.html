@@ -14,16 +14,16 @@
   </header>
   <main class="main">
       <p class="text_area">
-        <input type="text" class="text" name="example" size="30">
+        <input type="text" id="text_value" class="text" name="example" size="30">
       </p>
 
       <p class="button">
         <input type="button" value="送信する" onclick="OnButtonClick();">
-        <input type="button" value="リセット">
+        <input type="button" value="リセット" onclick="ResetClick();">
       </p>
 
       <div class="result">
-        <div class="val">1</div>
+        <div id="val" class="val">1</div>
       </div>
   </main>
 </body>
