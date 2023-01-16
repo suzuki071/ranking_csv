@@ -1,6 +1,4 @@
 function OnButtonClick() {
-  // let text_val = document.getElementById('text_value').value;
-  // document.getElementById('val').textContent = text_val;
   getCSV();
 }
 
@@ -10,11 +8,11 @@ function ResetClick() {
 
 
 function getCSV(){
-  var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
+  var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRequestオブジェクトを生成
   req.open("get", "sample.csv", true); // アクセスするファイルを指定
   req.send(null); // HTTPリクエストの発行
 
-  // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
+  // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ
   req.onload = function(){
     convertCSVtoArray(req.responseText); // 渡されるのは読み込んだCSVデータ
   }
@@ -31,4 +29,13 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
   }
 
   alert(result[0][0]); // 300yen
+  let text_val = document.getElementById('text_value').value;
+  for (var i=1; i<=tmp.length; ++i) {
+    if (text_val == result[0][i]){
+      document.getElementById('val').textContent = result[1][i];
+      return;
+    }
+  }
+  document.getElementById('val').textContent = '圏外';
+  return;
 }
