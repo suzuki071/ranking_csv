@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #D5EEFF;
 }
 /* header */
 .header {
@@ -46,6 +47,7 @@ body {
   text-align: center;
   vertical-align: middle;
   border: 1px solid;
+  background-color: white;
 }
 
 .val {

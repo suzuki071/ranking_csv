@@ -1,7 +1,3 @@
-function OnButtonClick() {
-  getCSV();
-}
-
 function ResetClick() {
   document.getElementById('text_value').value = "";
 }
