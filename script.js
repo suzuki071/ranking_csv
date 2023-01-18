@@ -24,7 +24,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
       result[i] = tmp[i].split(',');
   }
 
-  alert(result[0][0]); // 300yen
+  alert(result[0][0]);
   let text_val = document.getElementById('text_value').value;
   for (var i=1; i<=tmp.length; ++i) {
     if (text_val == result[0][i]){
