@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: #D5EEFF;
 }
+
 /* header */
 .header {
   width: 100%;
@@ -18,19 +19,20 @@ body {
 
 /* main */
 .main {
- /* background-color: aquamarine; */
- width: 800px;
- margin: 0 auto;
+  /* background-color: aquamarine; */
+  width: 800px;
+  margin: 0 auto;
 }
 
 .text_area {
   /* background-color: red; */
-  width: 500px;
+  width: 600px;
   height: 50px;
   margin: 40px auto;
   text-align: center;
   vertical-align: middle;
 }
+
 .text {
   width: 200px;
 }
@@ -40,20 +42,20 @@ body {
 }
 
 .btn {
-	text-align: center;
-	text-decoration: none;
-	width: 120px;
-	margin: auto;
-	padding: 1rem 4rem;
-	font-weight: bold;
-	border: 2px solid #27acd2;
-	color: #27acd2;
-	transition: 0.5s;
+  text-align: center;
+  text-decoration: none;
+  width: 120px;
+  margin: auto;
+  padding: 1rem 4rem;
+  font-weight: bold;
+  border: 2px solid #27acd2;
+  color: #27acd2;
+  transition: 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
   color: #fff;
-	background: #27ac11;
+  background: #27ac11;
 }
 
 .result {
